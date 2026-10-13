@@ -2,7 +2,7 @@
 # Venue labels retain conference years. Fusurge was first online 2026-09-02,
 # while Springer uses 2027 for its print/BibTeX citation year.
 # Fusionista2.0 has 12 published authors; the supplied manuscript has 13.
-# PDF links are the owner-supplied manuscripts. BibTeX follows published metadata.
+# PDF links are the owner-supplied manuscripts. BibTeX files are unmodified Springer .BIB exports.
 # Other supported fields: year, code, page (project), notes, others (trusted HTML).
 # conference_short is the badge: use a short venue/track name without a year.
 # Keep the displayed event year in `year`, separate from the venue name.
