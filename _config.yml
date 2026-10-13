@@ -1,53 +1,44 @@
-# Basic Information 
-title: Your Name
-position: Ph.D. Student
-affiliation: Your Affiliation
-email: yourname (at) example.edu
+# Personal details — add your real email and portrait when ready.
+title: Huy Gia Ngo
+position: B.S. in Computer Science
+affiliation: VNU-HCM University of Information Technology
+affiliation_link: https://www.uit.edu.vn/
+email: huy.ngo.tech@gmail.com # TODO: your real email address; hidden until provided.
 
-# Search Engine Optimization (SEO)
-# The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+# GitHub Pages user site (no project subpath or custom domain).
+url: https://githuyngo.github.io
+baseurl: ""
+canonical: https://githuyngo.github.io/
+repository: gitHuyNgo/githuyngo.github.io
+lang: en
+description: Huy Gia Ngo is an undergraduate Computer Science student at UIT, VNU-HCM, interested in Computer Vision, Vision-Language Models, Multimodal Learning, and Information Retrieval.
+keywords: Computer Vision, Vision-Language Models, Multimodal Learning, Information Retrieval
 
-# Links 
-# If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/
-cv_link: assets/files/curriculum_vitae.pdf
-github_link: https://github.com/
-linkedin: https://www.linkedin.com/
-twitter: https://twitter.com/
+# Scholar and CV remain visible as non-clickable icons until real links are added.
+github_link: https://github.com/gitHuyNgo
+github_username: gitHuyNgo
+show_github_contributions: true
+google_scholar: https://scholar.google.com/citations?user=dMAjjRsAAAAJ
+linkedin: https://www.linkedin.com/in/huyngo06/
+cv_link: "" # e.g. /assets/files/cv.pdf after adding your real document.
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+# TODO: add your portrait and optional favicon as local assets.
+# Empty image fields render an explicit photo placeholder or omit the favicon.
+avatar: assets/img/avatar.jpg
+avatar_alt: "Portrait of Huy Gia Ngo"
+favicon: assets/img/favicon-round.svg
+favicon_dark: ""
 
-# Footnote
-# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
+show_last_updated: true
+# Light is the default; the manual theme button remembers each visitor's choice.
+font: Sans Serif
 
-# Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
-
-# Font
-# You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
-
-# Google Analytics ID
-# Please remove this if you don't use Google Analytics
-google_analytics: UA-111540567-4
-
-# Use this project as a remote theme for GitHub Pages
-# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-remote_theme: yaoyao-liu/minimal-light
-
-# The following files will be removed from the generated website.
+# The theme is vendored in this repository; no remote theme fetch is needed.
+# Demo analytics are deliberately removed. Add analytics only if you use them.
 exclude:
   - Gemfile
   - Gemfile.lock
+  - scripts/
   - README.md
   - README_zh_Hans.md
   - README_zh_Hant.md
@@ -55,3 +46,8 @@ exclude:
   - LICENSE
   - minimal-light.gemspec
   - html_source_file/
+  - CNAME
+  - assets/files/curriculum_vitae.pdf
+  - assets/img/avatar.png
+  - assets/img/teaser_example.png
+  - assets/img/teaser_example_2.png

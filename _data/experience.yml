@@ -1,0 +1,14 @@
+# Group consecutive periods under one company. Keep positions newest first.
+# TODO: optional company URL and verified responsibilities.
+- name: Viettel Networks Corporation
+  logo: /assets/img/logos/viettel.png
+  url: ''
+  positions:
+  - role: AI Engineer Intern
+    location: Hanoi, Vietnam · On-site
+    dates: Aug 2026 – Present
+    details: []
+  - role: AI Engineer Intern
+    location: Remote
+    dates: May 2026 – Jul 2026
+    details: []

@@ -1,0 +1,25 @@
+<ul class="career-list">
+  {% for entry in include.entries %}
+  <li class="career-entry">
+    {% if entry.logo and entry.logo != "" %}
+    <img class="career-logo" src="{{ entry.logo | relative_url }}" alt="{{ entry.name | escape }} logo" width="48" height="28" loading="lazy">
+    {% else %}
+    <span class="career-logo career-logo-missing" role="img" aria-label="TODO: add {{ entry.name | escape }} logo">TODO<br>logo</span>
+    {% endif %}
+    <div class="career-details">
+      <h3 class="career-name">{% if entry.url and entry.url != "" %}<a href="{{ entry.url | relative_url }}">{{ entry.name | escape }}</a>{% else %}{{ entry.name | escape }}{% endif %}</h3>
+      {% if entry.positions.size > 0 %}
+      <ol class="career-positions" aria-label="Positions at {{ entry.name | escape }}">
+        {% for position in entry.positions %}
+        <li class="career-position">
+          {% include career-position.html entry=position %}
+        </li>
+        {% endfor %}
+      </ol>
+      {% else %}
+      {% include career-position.html entry=entry %}
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>

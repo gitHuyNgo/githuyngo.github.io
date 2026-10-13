@@ -1,0 +1,10 @@
+{% if site.data.news.size > 0 %}
+<ul class="news-list">
+  {% assign news = site.data.news | sort: "date" | reverse %}
+  {% for item in news %}
+  <li><time datetime="{{ item.date | escape }}">[{{ item.date | date: "%b. %Y" }}]</time> {{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="empty-state">No news to share yet.</p>
+{% endif %}

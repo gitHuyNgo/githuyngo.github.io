@@ -1,0 +1,5 @@
+<p class="career-role">{{ include.entry.role | escape }}</p>
+<p class="career-meta">{{ include.entry.location | escape }} <span aria-hidden="true">&middot;</span> {{ include.entry.dates | escape }}</p>
+{% for detail in include.entry.details %}
+<div class="career-description">{{ detail | markdownify }}</div>
+{% endfor %}

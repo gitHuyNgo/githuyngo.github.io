@@ -1,0 +1,7 @@
+- name: VNU-HCM University of Information Technology
+  url: https://www.uit.edu.vn/
+  role: Bachelor of Science in Computer Science
+  location: Ho Chi Minh City, Vietnam
+  dates: Sep 2024 – Present
+  logo: /assets/img/logos/uit.png
+  details: [] # Optional concise, verified academic details; Markdown supported.

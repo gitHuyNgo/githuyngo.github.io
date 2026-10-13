@@ -1,22 +1,30 @@
+# Verified titles/authors from Springer and its Crossref DOI records.
+# Venue labels retain conference years. Fusurge was first online 2026-09-02,
+# while Springer uses 2027 for its print/BibTeX citation year.
+# Fusionista2.0 has 12 published authors; the supplied manuscript has 13.
+# PDF links are the owner-supplied manuscripts. BibTeX follows published metadata.
+# Other supported fields: year, code, page (project), notes, others (trusted HTML).
+# conference_short is the badge: use a short venue/track name without a year.
+# Keep the displayed event year in `year`, separate from the venue name.
 main:
-
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
-
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+- title: 'Fusurge: An Accelerated Query-Driven System for Multimodal Information Retrieval'
+  authors: Phu Truong Thien, <strong>Huy Gia Ngo</strong>, Tan Nhat Nguyen, Thuy T. N. Nguyen, Dat Tien Nguyen, Huy M. Le
+  conference: Information and Communication Technology <strong>(SOICT)</strong>
+  year: 2025
+  conference_short: SOICT
+  publisher: https://link.springer.com/chapter/10.1007/978-981-92-2590-3_37
+  pdf: /assets/files/soict2025.pdf
+  bibtex: /assets/files/fusurge.bib
+  image: /assets/img/publications/fusurge.png
+  image_alt: Fusurge system architecture and retrieval interface
+- title: 'Fusionista2.0: Efficiency Retrieval System for Large-Scale Datasets'
+  authors: Huy M. Le, Dat Tien Nguyen, Phuc Binh Nguyen, Gia Bao Le Tran, Phu Truong Thien, Cuong Dinh, Minh Nguyen, Nga Nguyen,
+    Thuy T. N. Nguyen, <strong>Huy Gia Ngo</strong>, Tan Nhat Nguyen, Binh T. Nguyen
+  conference: Video Browser Showdown <strong>(VBS)</strong> at MMM
+  year: 2026
+  conference_short: VBS
+  publisher: https://link.springer.com/chapter/10.1007/978-981-95-6963-2_17
+  pdf: /assets/files/vbs2026.pdf
+  bibtex: /assets/files/fusionista2.bib
+  image: /assets/img/publications/fusionista2.png
+  image_alt: Fusionista2.0 indexing and search architecture
